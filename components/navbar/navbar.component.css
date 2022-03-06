@@ -1,0 +1,85 @@
+nav{
+    width: 100%;
+    height: 56px;
+    display: flex;
+    z-index: 3;
+    background-color: #00b686;
+    position: fixed;
+    margin-top: -56px;
+    color: white !important;
+}
+.wrap-pc-container{
+    width: 100%;
+    height: 56px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    display: flex;
+    z-index: 3;
+    align-items: center;
+    position: fixed;
+    justify-content: space-between;
+}
+.btn-on-pc{
+    display:flex;
+    flex-direction: row;
+}
+.wrap-phone-container{
+    display: none;
+}
+.navTitle{
+    color: white !important;
+    font-weight: 600;
+}
+.left-container{
+    display: flex;
+}
+nav button{
+    background: none;
+    border: none;
+    color: var(--primary-gs);
+    font-weight: 600;
+    font-size: 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    white-space: nowrap;
+    text-align: center;
+    margin: 0;
+    line-height: 36px;
+    padding: 0 16px;
+    border-radius: 4px;
+    overflow-x: visible;
+}
+nav button:hover{
+    background-color: #00000066;
+}
+
+@media screen and (max-width:544px){
+    nav{
+        height: 106px;
+        color: white !important;
+        padding: 0;
+    }
+    .wrap-pc-container{
+        padding: 0;
+    }
+    .btn-on-pc{
+        display:none !important;
+    }
+    .wrap-phone-container{
+        display: flex;
+        width: 100%;
+        height: 50px;
+        align-self: flex-end;
+        justify-content: space-between;
+        overflow: auto;
+    }
+    .btn-phone{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+}

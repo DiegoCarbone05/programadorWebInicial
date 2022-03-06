@@ -1,0 +1,12 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ul, li{
+    padding: none;
+}
+body{
+    margin: 0;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+}

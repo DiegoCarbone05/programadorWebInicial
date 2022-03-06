@@ -1,0 +1,59 @@
+@import url('../global.styles.css');
+
+header{
+    width: 100%;
+    background-color: #00b686;
+    display: flex;
+}
+.header-extended{
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-gs);
+}
+
+.header-img{
+    background: url('https://dbdzm869oupei.cloudfront.net/img/sticker/preview/51135.png');
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 420px;
+    z-index: 0;
+    filter: grayscale(100%);
+    opacity: 10%;
+}
+    
+.wrap-nav-content{
+    flex-direction: column;
+    z-index: 2;
+    text-align: center;
+}
+.wrap-nav-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 56px;
+    margin: 15px 5px;
+}
+.wrap-nav-content h2{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+    margin: 15px 0 25px;
+}
+@media screen and (max-width:544px){
+    .header-extended{
+        height: 278px;
+        background-color: #1bc396;
+    }
+    .wrap-nav-content h1{
+        font-size: 35px;
+    }
+    .wrap-nav-content h2{
+        font-size: 15px;
+        margin: 0;
+    }
+}
