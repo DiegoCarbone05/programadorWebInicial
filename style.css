@@ -1,35 +1,85 @@
-.index-content{
-    margin-top: 56px;
+nav{
     width: 100%;
-    height: 50px;
+    height: 56px;
+    display: flex;
+    z-index: 3;
+    background-color: #00b686;
+    position: fixed;
+    /* margin-top: -56px; */
+    color: white !important;
 }
-.index-main{
+.wrap-pc-container{
+    width: 100%;
+    height: 56px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    display: flex;
+    z-index: 3;
     align-items: center;
-    display: flex;
-    flex-direction: column;
-    padding: 16px;
-    width: 75%;
-    max-width: 1080px;
-    margin: auto;
-    
+    position: fixed;
+    justify-content: space-between;
 }
-.index-card-seccion{
-    width: 100%;
-    display: flex;
+.btn-on-pc{
+    display:flex;
     flex-direction: row;
-    gap: 24px;
-    justify-content: center;
-    color: #0000008a;
-    margin: 30px 0;
-    flex-wrap: wrap;
 }
-.index-card-item{
+.wrap-phone-container{
+    display: none;
+}
+.navTitle{
+    color: white !important;
+    font-weight: 600;
+}
+.left-container{
     display: flex;
-    flex-direction: column;
-    width: 250px;
 }
+nav button{
+    background: none;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    white-space: nowrap;
+    text-align: center;
+    margin: 0;
+    line-height: 36px;
+    padding: 0 16px;
+    border-radius: 4px;
+    overflow-x: visible;
+}
+nav button:hover{
+    background-color: #00000066;
+}
+
 @media screen and (max-width:544px){
+    nav{
+        height: 106px;
+        color: white !important;
+        padding: 0;
+    }
+    .wrap-pc-container{
+        padding: 0;
+    }
+    .btn-on-pc{
+        display:none !important;
+    }
+    .wrap-phone-container{
+        display: flex;
+        width: 100%;
+        height: 50px;
+        align-self: flex-end;
+        justify-content: space-between;
+        overflow: auto;
+    }
+    .btn-phone{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-
-
+    }
 }

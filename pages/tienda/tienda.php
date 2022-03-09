@@ -10,9 +10,6 @@
     
 </head>
 
-<?php include('../components/asideAndHeader/asideAndHeader.php')?>
-
-
 <body>
     
 

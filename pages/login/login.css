@@ -1,7 +1,6 @@
 @import url('../../global.styles.css');
 
 main{
-    margin-top: 56px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -11,14 +10,16 @@ main{
   margin-bottom: 0;
   font-size: 20px;
   font-weight: 500;
+  color: var(--text-color);
 }
 .form-users{
   width: 370px;
   box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f;
   display: flex;
-  margin: 50px auto 30px auto ;
+  margin: 100px auto 30px auto ;
   border-radius: 5px;
   flex-direction: column;
+  background-color: var(--secondary-gs);
 }
 .post-form-btn{
   color: white;
@@ -59,7 +60,7 @@ textarea {
 .mat-input,
 textarea {
   background: none;
-  color: #000000;
+  color: var(--text-color);
   font-size: 18px;
   padding: 10px 10px 10px 5px;
   display: block;

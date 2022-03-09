@@ -1,9 +1,10 @@
 h1{
-    margin: 50px 0 0 0;
+    margin: 100px 0 0 0;
+    color: var(--text-color);
+
 }
 
 .sobre-nosotros-main{
-    margin-top: 56px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -22,6 +23,7 @@ section{
     padding: 50px 0;
     display: flex;
     justify-content: space-between;
+    color: var(--text-color);
 }
 
 .seccion-img{

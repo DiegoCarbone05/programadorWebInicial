@@ -10,46 +10,38 @@
     <link rel="stylesheet" href="./global.styles.css">
 </head>
 
+<body>
 
-    <body>
-        <?php include('./components/navbar/navbar.component.php')?>
-        <div class="index-content">
-            <?php 
-                include('./components/cne-header-extended/header-extended.component.php');
-                $tituloCard1 = 'High quality';
-                $tituloCard2 = 'Versatile';
-                $tituloCard3 = 'Frictionless';
-            ?>
-            <main class='index-main'>
-                <section class='index-card-seccion'>
-                    <div class="index-card-item">
-                        <!-- Variable -->
-                        <h2><?php echo $tituloCard1?></h2>
 
-                        <p>Internationalized and accessible components for everyone. Well tested to ensure performance and reliability.</p>
-                        <p>Straightforward APIs with consistent cross platform behaviour.</p>
-                    </div>
-                    <div class="index-card-item">
-                        <!-- Variable -->
-                        <h2><?php echo $tituloCard2?></h2>
-
-                        <p>Provide tools that help developers build their own custom components with common interaction patterns.</p>
-                        <p>Customizable within the bounds of the Material Design specification.</p>
-                    </div>
-                    <div class="index-card-item">
-                        <!-- Variable -->
-                        <h2><?php echo $tituloCard3?></h2>
-
-                        <p>Built by the Angular team to integrate seamlessly with Angular.</p>
-                        <p>Start from scratch or drop into your existing applications.</p>
-                    </div>
-                </section>
-
-                <hr>
-                <div id="soyunid"></div>
-
-            </main>
+    <nav>
+        <div style="color:white;" class="wrap-pc-container">
+            <div  class="left-container">
+                <a href="index.php?component=home"><button>DiegoCarbone</button></a>
+                <a href="index.php?component=sobreNosotros"><button class="btn-on-pc">Sobre Nosotros</button></a>
+                <a href="index.php?component=users"><button class="btn-on-pc">Usuarios</button></a>
+            </div>
+            <div class="right-container">
+                <a href="index.php?component=login"><button class="right btn-on-pc">Inicar sesion</button></a>
+            </div>
         </div>
-    </body>
+        <div style="color:white;" class="wrap-phone-container">
+            <button class="btn-phone" onClick="redirectLocation('sobreNosotros')">Sobre nosotros</button>
+            <button class="btn-phone" onClick="redirectLocation('users')">Usuarios</button>
+
+            <button class="right" onClick="redirectLocation('login')">Inicar sesion</button>
+        </div>
+    </nav>
+
+    <?php
+        if ($_GET["component"]) {
+            $root = $_GET["component"];
+        }
+        else{
+            $root = "home";
+        }
+        include('./pages/'.$root.'/'.$root.'.php')
+    ?>
+
+</body>
 
 </html>
