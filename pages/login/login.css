@@ -64,7 +64,7 @@ textarea {
   font-size: 18px;
   padding: 10px 10px 10px 5px;
   display: block;
-  width: 320px;
+  width: 100%;
   border: none;
   border-radius: 0;
   border-bottom: 1px solid #c6c6c6;
@@ -137,4 +137,10 @@ label {
   align-self: center;
   color: #3d7a33;
   font-weight: 500;
+}
+
+@media screen and (max-width:400px){
+  .form-users{
+    width: 90%;
+  }
 }

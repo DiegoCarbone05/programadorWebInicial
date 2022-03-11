@@ -31,13 +31,13 @@
         <tr>
             <th>Nombre</th>
             <th>Apellido</th>
-            <th>Email</th>
+            <th class="email">Email</th>
         </tr>
         <?php foreach($users as $user): ?>
         <tr>
             <td><?= $user->nombre ?></td>
             <td><?= $user->apellido ?></td>
-            <td><?= $user->email ?></td>
+            <td class="email"><?= $user->email ?></td>
         </tr>
         <?php endforeach ?>
     </table>

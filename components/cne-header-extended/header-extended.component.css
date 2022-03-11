@@ -48,6 +48,8 @@ header{
     .header-extended{
         height: 278px;
         background-color: #1bc396;
+        top: 56px;
+        position: relative;
     }
     .wrap-nav-content h1{
         font-size: 35px;

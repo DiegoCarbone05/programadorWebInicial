@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unidad 4: Maquetación Web</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Carbone Website</title>
     <meta name="theme-color" content="#00b686">
+    <link rel="icon" href="CarboneFavicon.ico">
+
+    <link rel="stylesheet" href="./css/lightbox.min.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./global.styles.css">
+    
 </head>
 
 <body>
@@ -24,16 +28,19 @@
                 <a href="index.php?component=login"><button class="right btn-on-pc">Inicar sesion</button></a>
             </div>
         </div>
-        <div style="color:white;" class="wrap-phone-container">
-            <button class="btn-phone" onClick="redirectLocation('sobreNosotros')">Sobre nosotros</button>
-            <button class="btn-phone" onClick="redirectLocation('users')">Usuarios</button>
 
-            <button class="right" onClick="redirectLocation('login')">Inicar sesion</button>
+        <div style="color:white;" class="wrap-phone-container">
+
+            <a href="index.php?component=sobreNosotros"><button class="btn-phone">Sobre nosotros</button></a>
+            <a href="index.php?component=users"><button class="btn-phone">Usuarios</button></a>
+            <a href="index.php?component=login"><button class="right">Inicar sesion</button></a>
+            
         </div>
+
     </nav>
 
     <?php
-        if ($_GET["component"]) {
+        if (isset($_GET["component"])) {
             $root = $_GET["component"];
         }
         else{
@@ -41,6 +48,10 @@
         }
         include('./pages/'.$root.'/'.$root.'.php')
     ?>
+
+
+    <script src="./js/lightbox-plus-jquery.min.js"></script>
+    
 
 </body>
 

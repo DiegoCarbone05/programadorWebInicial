@@ -4,12 +4,13 @@
 <main class="main-global">
     
     <header class='small-header'>
-        <p>Login</p>
+        <p>Iniciar sesion</p>
     </header>
     
     <form action="https://carbonesoftware.000webhostapp.com/carboneWebsite-UTN/db/enviar_consulta.php" class="form-users" method='POST'>
 
         <?php if(isset($_GET['e'])): ?>
+
             <div class='alert-log'>  
                 <p class='alert-message'> Mensaje enviado con exito </p>
             </div>
@@ -34,6 +35,7 @@
         </div>
 
         <input class='post-form-btn' type="submit">
+        
     </div>
     </form>
 

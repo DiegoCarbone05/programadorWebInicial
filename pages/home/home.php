@@ -32,5 +32,6 @@
                 <p>Start from scratch or drop into your existing applications.</p>
             </div>
         </section>
+
     </main>
 </div>
