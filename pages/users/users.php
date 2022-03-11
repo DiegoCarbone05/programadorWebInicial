@@ -20,6 +20,9 @@
     curl_close($curl);
 
     $users = json_decode($response);
+    if($users == null){
+        $users = [];
+    }
 ?>
 <main>
     
@@ -27,6 +30,7 @@
         <p>Usuarios</p>
     </header>
 
+    <?php if(count($users)): ?>
     <table>
         <tr>
             <th>Nombre</th>
@@ -41,7 +45,9 @@
         </tr>
         <?php endforeach ?>
     </table>
-
+    <?php else: ?>
+        <p class="no-users-found">No se han cargado usuarios aun</p>
+    <?php endif; ?>
     <br><br><br><br><br>
 
 </main>

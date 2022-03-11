@@ -1,6 +1,7 @@
 <?php
 
-    $conexion = mysqli_connect("localhost", "root", "", "programador_web2022" ) 
+    //$conexion = mysqli_connect("localhost", "root", "", "programador_web2022" ) 
+    $conexion = mysqli_connect("localhost", "id18154039_consultas", "Asdasd123123!", "id18154039_programador_web" ) 
     or exit('no se pudo conectar con la base de datos');
    
     // $conexion = mysqli_connect("localhost", "id18154039_consultas", "?M=+Ui}n[z$]tg9V", "id18154039_programador_web" ) 

@@ -27,10 +27,16 @@ tr:last-child {
   border-bottom: 1px solid #80808070;
 }
 
+.no-users-found {
+  margin: 20vh auto;
+  color: var(--text-color);
+  font-size: 24px;
+}
+
 @media screen and (max-width: 446px) {
   table {
     width: 90vw;
-    font-size: 14px;
+    font-size: 12px;
   }
 
   td,
@@ -38,5 +44,9 @@ tr:last-child {
     padding: 8px;
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+
+  .no-users-found {
+    font-size: 16px;
   }
 }

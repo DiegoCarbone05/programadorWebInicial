@@ -11,7 +11,7 @@
         <section>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus illum nisi quod ducimus saepe provident vitae! Fugit laudantium neque pariatur minima enim perspiciatis aliquid quisquam cum, explicabo fugiat assumenda nihil!</p>
             
-            <a href="./assets/illustrations/undraw_complete_design_re_h75h.svg" data-lightbox="image-1" data-title="My caption">
+            <a href="./assets/illustrations/undraw_complete_design_re_h75h.svg" data-lightbox="image-1" data-title="Trabajos completos">
                 <img class="seccion-img" src="./assets/illustrations/undraw_complete_design_re_h75h.svg" alt="">
             </a>
 
@@ -19,7 +19,7 @@
         <hr>
         <section>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus illum nisi quod ducimus saepe provident vitae! Fugit laudantium neque pariatur minima enim perspiciatis aliquid quisquam cum, explicabo fugiat assumenda nihil!</p>
-            <a href="./assets/illustrations/undraw_close_tab_re_4cj6.svg" data-lightbox="image-1" data-title="My caption">
+            <a href="./assets/illustrations/undraw_close_tab_re_4cj6.svg" data-lightbox="image-1" data-title="Buena organizacion">
                 <img class="seccion-img" src="./assets/illustrations/undraw_close_tab_re_4cj6.svg" alt="">
             </a>
             
@@ -28,7 +28,7 @@
         <hr>
         <section>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus illum nisi quod ducimus saepe provident vitae! Fugit laudantium neque pariatur minima enim perspiciatis aliquid quisquam cum, explicabo fugiat assumenda nihil!</p>
-            <a href="./assets/illustrations/undraw_ideas_flow_re_bmea.svg" data-lightbox="image-1" data-title="My caption">
+            <a href="./assets/illustrations/undraw_ideas_flow_re_bmea.svg" data-lightbox="image-1" data-title="Flujo de ideas">
                 <img class="seccion-img" src="./assets/illustrations/undraw_ideas_flow_re_bmea.svg" alt="">
             </a>
         </section>

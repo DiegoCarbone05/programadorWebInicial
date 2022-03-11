@@ -1,48 +1,46 @@
-h1{
-    margin: 100px 0 0 0;
-    color: var(--text-color);
-
+h1 {
+  margin: 100px 0 0 0;
+  color: var(--text-color);
 }
 
-.sobre-nosotros-main{
+.sobre-nosotros-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.aboutUs-content {
+  align-self: center;
+  width: 80%;
+  height: 100%;
+  height: fit-content;
+}
+section {
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-color);
+}
+
+.seccion-img {
+  display: flex;
+  height: 300px;
+}
+section p {
+  width: 50%;
+  font-size: 30px;
+}
+@media screen and (max-width: 800px) {
+  section p {
     width: 100%;
-    display: flex;
+    font-size: 20px;
+  }
+  section {
     flex-direction: column;
-    overflow-x: hidden;
-}
-
-.aboutUs-content{
-    align-self: center;
-    width: 80%;
-    height: 100%;
-    height: fit-content;
-
-}
-section{
+  }
+  .seccion-img {
     width: 100%;
-    padding: 50px 0;
-    display: flex;
-    justify-content: space-between;
-    color: var(--text-color);
-}
-
-.seccion-img{
-    display: flex;
-    height: 300px;
-}
-section p{
-    width: 50%;
-    font-size: 30px;
-}
-@media screen and (max-width: 800px){
-    section p{
-        width: 100%;
-        font-size: 20px;
-    }
-    section{
-        flex-direction: column;
-    }
-    .seccion-img{
-        width: 100%;
-    }
+  }
 }

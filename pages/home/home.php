@@ -28,7 +28,7 @@
                 <!-- Variable -->
                 <h2><?php echo $tituloCard3?></h2>
  
-                <p>Built by the Angular team to integrate seamlessly with Angular.</p>
+                <p>Built by the Angular team to integrate seamlessly with Carbone Software.</p>
                 <p>Start from scratch or drop into your existing applications.</p>
             </div>
         </section>
